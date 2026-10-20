@@ -1,3 +1,8 @@
+; Materia: Lenguajes de Interfaz
+; Nombre: Sebastian Urias Hernandez
+; Horario: 10 - 11
+; Docente: Jose Luis Medina Jimenez
+
 INCLUDE Irvine32.inc
 ; 11 - Push y Pop
 .data
@@ -11,7 +16,7 @@ main PROC
 
     mov ebx, 0
 
-    pob ebx
+    pop ebx
 
     nop
 

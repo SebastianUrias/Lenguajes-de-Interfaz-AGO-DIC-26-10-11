@@ -1,3 +1,8 @@
+; Materia: Lenguajes de Interfaz
+; Nombre: Sebastian Urias Hernandez
+; Horario: 10 - 11
+; Docente: Jose Luis Medina Jimenez
+
 INCLUDE Irvine32.inc
 .data
     mensajeEntrada BYTE "Cuantas unidades llegaron (1-99): ", 0
