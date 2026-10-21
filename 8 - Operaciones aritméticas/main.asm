@@ -12,6 +12,7 @@ main PROC
 mov eax, 50
 mov ebx, 20
 
+;   ADD es la funcion para sumar y sub para restar
 add eax, ebx
 sub eax, 15
 
@@ -21,6 +22,7 @@ nop
 mov eax, 0
 mov al, 255
 
+;   Al superar la capacidad se activa el cf
 add al,1
 
 call dumpRegs

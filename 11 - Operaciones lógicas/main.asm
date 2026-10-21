@@ -59,6 +59,7 @@ main PROC
 ; Mandar mensaje de alarma encendida o alarma apagada
 
     test al, 00000010b
+    ;   si test fue cero salta a la alarmaApagada, si no a alarmaEncendida
     jz alarmaApagada
     jmp alarmaEncendida
 
