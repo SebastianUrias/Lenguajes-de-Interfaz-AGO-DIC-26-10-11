@@ -125,21 +125,30 @@ convertirDecimal PROC USES ebx ecx edx edi
     jmp terminarCadena
 
 dividirNumero:
+    ;   esto deja edx limpio
     xor edx, edx
     div ebx
+    ;   se guarda el residuo en edx, que es el digito que se escribira en el buffer
     push edx
+    ;   se incrementa el contador de digitos
     inc ecx
+    ;  se repite el proceso hasta que eax sea 0
     test eax, eax
+    ;   finaliza el ciclo cuando eax sea 0, sino se repite el proceso
     jnz dividirNumero
 
 escribirDigitos:
+    ;   se saca el digito del stack y se convierte a caracter sumando '0'
     pop edx
+    ;   se convierte el digito a caracter sumando '0' 
     add dl, '0'
+    ;   se escribe el digito en el buffer
     mov BYTE PTR [edi], dl
     inc edi
     loop escribirDigitos
 
 terminarCadena:
+    ;   se escribe el 0 al final de la cadena para indicar que es una cadena de caracteres
     mov BYTE PTR [edi], 0
     ret
 convertirDecimal ENDP
