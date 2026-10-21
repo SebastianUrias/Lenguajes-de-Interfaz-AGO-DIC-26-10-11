@@ -10,7 +10,7 @@ INCLUDE Irvine32.inc
     mensajeResultado BYTE "Existencia actual: ", 0
     mensajeUnidades BYTE " unidades", 13, 10, 0
 
-    ; ReadString necesita espacio para los caracteres y el terminador cero.
+
     entrada BYTE 16 DUP(0)
     salida BYTE 11 DUP(0)
 
@@ -24,18 +24,18 @@ solicitarEntrada:
     mov edx, OFFSET mensajeEntrada
     call WriteString
 
-    ; ReadString deja en EAX el numero de caracteres leidos.
+   
     mov edx, OFFSET entrada
     mov ecx, SIZEOF entrada
     call ReadString
 
-    ; La cantidad debe tener uno o dos caracteres.
+   
     cmp eax, 1
     jb entradaInvalida
     cmp eax, 2
     ja entradaInvalida
 
-    ; Convertir cada digito ASCII a su valor numerico.
+    
     mov esi, OFFSET entrada
     mov ecx, eax
     xor ebx, ebx
@@ -54,7 +54,7 @@ convertirDigitos:
     inc esi
     loop convertirDigitos
 
-    ; Esto tambien rechaza el valor cero, incluyendo "00".
+    
     cmp ebx, 1
     jb entradaInvalida
     cmp ebx, 99
@@ -62,12 +62,10 @@ convertirDigitos:
 
     mov cantidadRecibida, ebx
 
-    ; Actualizar la existencia sumando las unidades recibidas.
     mov eax, existenciaActual
     add eax, cantidadRecibida
     mov existenciaActual, eax
 
-    ; Convertir el DWORD a texto para poder mostrarlo con WriteString.
     mov eax, existenciaActual
     mov edi, OFFSET salida
     call DwordToString
@@ -88,13 +86,10 @@ entradaInvalida:
 
 main ENDP
 
-; Entrada: EAX = DWORD sin signo, EDI = direccion del buffer de salida.
-; Salida: el numero en decimal terminado en cero en el buffer.
 DwordToString PROC USES eax ebx ecx edx edi
     mov ebx, 10
     xor ecx, ecx
 
-    ; El bucle de divisiones no produce digitos cuando el valor es cero.
     cmp eax, 0
     jne dividirNumero
     mov BYTE PTR [edi], '0'
@@ -109,7 +104,6 @@ dividirNumero:
     test eax, eax
     jnz dividirNumero
 
-    ; Los restos salen al reves; desapilarlos los escribe en orden correcto.
 escribirDigitos:
     pop edx
     add dl, '0'

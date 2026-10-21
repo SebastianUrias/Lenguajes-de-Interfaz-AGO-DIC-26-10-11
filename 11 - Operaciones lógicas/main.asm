@@ -57,9 +57,8 @@ main PROC
 
 ; 4 - Operacion TEST: Evaluar la alarma encendida y apagada
 ; Mandar mensaje de alarma encendida o alarma apagada
-    
 
-test al, 00000010b
+    test al, 00000010b
     jz alarmaApagada
     jmp alarmaEncendida
 
