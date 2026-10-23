@@ -8,7 +8,7 @@ Repositorio de Practicas realizadas en clase de lenguajes de interfaz en assembl
 
 ## Indice de practicas
 
-- [PRACTICA 1. CICLOS NUMERICOS](./1%20-Ciclos/main.asm)
+- [PRACTICA 1. CICLOS NUMERICOS](./1%20-%20Ciclos/main.asm)
 - [PRACTICA 2. CAPTURA Y DESPLEGADO DE MENSAJE](./2%20-%20Captura%20y%20Desplejado%20de%20Mensaje/main.asm)
 - [PRACTICA 3. COMPARACIÓN Y PRUEBA](./3%20-%20Comparacion%20y%20Prueba/main.asm)
 - [PRACTICA 4. SALTOS](./4%20-%20Saltos/main.asm)
