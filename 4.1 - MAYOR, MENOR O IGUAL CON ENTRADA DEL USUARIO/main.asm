@@ -11,15 +11,19 @@ msgIguales BYTE "Los numeros son iguales.", 0
 .code
 main PROC
 
-    mov edx, OFFSET msgIngresar1 ;Se despliega el mensaje para ingresar el primer valor
+    mov edx, OFFSET msgIngresar1 
+    call WriteString
+    ;   ReadInt lee un valor entero y lo almacena en EAX 
+    call ReadInt 
+    ;   Se guarda el valor en ecx porque se volverá a usar ReadInt y se sobreescribirá el valor en EAX
+    mov ecx, eax
+    ;   Se despliega el mensaje para ingresar el segundo valor
+    mov edx, OFFSET msgIngresar2 
     call WriteString 
-    call ReadInt ;ReadInt lee un valor entero y lo almacena en EAX
-    mov ecx, eax ;Se guarda el valor en ecx porque se volverá a usar ReadInt y se sobreescribirá el valor en EAX
-
-    mov edx, OFFSET msgIngresar2 ;Se despliega el mensaje para ingresar el segundo valor
-    call WriteString 
-    call ReadInt ;se lee el segundo valor entero en EAX
-    mov ebx, eax ;se guarda el valor en ebx para generar la comparación
+    ;   se lee el segundo valor entero en EAX
+    call ReadInt 
+    ;   se guarda el valor en ebx para generar la comparación
+    mov ebx, eax 
     
     mov eax, ecx ;se coloca el valor del primer número en eax para realizar la comparación
 
