@@ -1,3 +1,8 @@
+; Materia: Lenguajes de Interfaz
+; Nombre: Sebastian Urias Hernandez
+; Horario: 10 - 11
+; Docente: Jose Luis Medina Jimenez
+
 INCLUDE Irvine32.inc
 .data
 ;Mensajes para pedir la entrada de datos
@@ -20,31 +25,24 @@ main PROC
     ;   Se despliega el mensaje para ingresar el segundo valor
     mov edx, OFFSET msgIngresar2 
     call WriteString 
-    ;   se lee el segundo valor entero en EAX
     call ReadInt 
-    ;   se guarda el valor en ebx para generar la comparación
     mov ebx, eax 
-    
-    mov eax, ecx ;se coloca el valor del primer número en eax para realizar la comparación
-
-    cmp eax, ebx; resta los valores de EAX y EBX 
-
-    jg mayor; Salta a la etiqueta EAX > EBX 
-
-    jl menor; Salta a la etiqueta  si EAX < EBX 
-
-    ;en caso de que la comparación de mayor o menor no se cumpla, se va directamente al mensaje de iguales
+    mov eax, ecx 
+    cmp eax, ebx 
+    jg mayor
+    jl menor
+    ;   en caso de que la comparación de mayor o menor no se cumpla, se va directamente al mensaje de iguales
     mov edx, OFFSET msgIguales
     call WriteString
-    jmp fin ;salta a la etiqueta fin para terminar el programa
+    jmp fin ;   salta a la etiqueta fin para terminar el programa
 
     mayor:
-        mov edx, OFFSET msgMayor ;muestra el mensaje de que el primer número es mayor
+        mov edx, OFFSET msgMayor ;  muestra el mensaje de que el primer número es mayor
         call WriteString 
         jmp fin
     
     menor:
-        mov edx, OFFSET msgMenor ; muestra el mensaje de que el primer número es menor
+        mov edx, OFFSET msgMenor ;  muestra el mensaje de que el primer número es menor
         call WriteString 
 
     fin: 
