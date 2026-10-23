@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña como manejar cadenas en formato hexadecimal y como representarlas en pantalla.
 
 INCLUDE Irvine32.inc
 .code

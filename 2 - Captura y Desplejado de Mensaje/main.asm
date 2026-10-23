@@ -2,6 +2,8 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta Practica nos muestra como es el capturado de una cadena ingresada por el usuario
+; y como mostrarlo
 
 INCLUDE Irvine32.inc
 

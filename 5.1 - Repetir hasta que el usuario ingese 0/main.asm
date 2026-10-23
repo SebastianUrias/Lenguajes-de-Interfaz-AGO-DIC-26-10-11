@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripciones: esta practica nos dice como controlar bucles con entradas repetitivas
 
 INCLUDE Irvine32.inc
 

@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos muestra como capturar un numero ingresado por el usuario y almacenarlo para su uso posterior.
 
 INCLUDE Irvine32.inc
 .data

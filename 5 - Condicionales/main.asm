@@ -2,6 +2,8 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña el uso de condiciones para los ciclos
+; y como el utilizar condiciones basadas en valores cambia el bucle
 
 INCLUDE Irvine32.inc
 .data

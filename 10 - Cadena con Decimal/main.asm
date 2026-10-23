@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos muestra como trabajar con cadenas y valores decimales para convertir y mostrar datos numericos.
 
 INCLUDE Irvine32.inc
 

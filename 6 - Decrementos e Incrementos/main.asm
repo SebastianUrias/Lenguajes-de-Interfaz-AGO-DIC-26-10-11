@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos muestra como aumentar o disminuir el valor de una variable con los comandos INC y DEC y como esto afecta el flujo del programa.
 
 INCLUDE Irvine32.inc
 
@@ -29,7 +30,7 @@ main PROC
     ;   se compara el valor ingresado con la clave correcta
     cmp eax, claveCorrecta
 
-    ;   si es igual, se salta a la etiqueta de acceso permitido
+    ;   si es igual, se salta a la e    tiqueta de acceso permitido
     je acceso 
 
     ;   si no es igual, se imprime el mensaje de error y se decrementa el contador de intentos

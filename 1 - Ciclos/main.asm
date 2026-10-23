@@ -2,7 +2,8 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
-
+; Descripcion: Este programa utiliza un contador que es ecx para repetir unas instrucciones
+             ; dentro de su estructura hasta que el contador es 0 
 
 INCLUDE Irvine32.inc
 .data

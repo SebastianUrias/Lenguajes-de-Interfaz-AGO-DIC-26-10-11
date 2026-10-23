@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña como validar que los datos ingresados por el usuario cumplan con un formato especifico antes de procesarlos.
 
 INCLUDE Irvine32.inc
 

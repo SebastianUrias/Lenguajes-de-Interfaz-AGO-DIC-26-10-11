@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 -11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña como realizar operaciones logicas con bits y como estas afectan el valor de las variables.
 
 INCLUDE Irvine32.inc
 

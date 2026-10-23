@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña como guardar valores en la pila con PUSH y recuperarlos con POP para manipular datos temporalmente.
 
 INCLUDE Irvine32.inc
 .data

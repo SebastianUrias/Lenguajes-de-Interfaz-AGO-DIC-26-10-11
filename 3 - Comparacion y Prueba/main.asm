@@ -2,6 +2,8 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Como se comparan valores y se toman desiciones apartir de esas comparaciones
+
 
 INCLUDE Irvine32.inc
 .data

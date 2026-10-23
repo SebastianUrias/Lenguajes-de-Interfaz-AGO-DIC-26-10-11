@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña como crear, leer y manipular archivos para guardar o recuperar datos.
 
 INCLUDE Irvine32.inc
 .data

@@ -2,6 +2,7 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos muestra como realizar operaciones matematicas como suma, resta, multiplicacion y division dentro del programa.
 
 INCLUDE Irvine32.inc
 .data

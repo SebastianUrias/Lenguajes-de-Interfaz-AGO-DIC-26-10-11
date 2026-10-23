@@ -2,6 +2,8 @@
 ; Nombre: Sebastian Urias Hernandez
 ; Horario: 10 - 11
 ; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica muestra el como se usan los saltos
+
 
 INCLUDE Irvine32.inc
 .code

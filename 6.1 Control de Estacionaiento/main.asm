@@ -1,3 +1,9 @@
+; Materia: Lenguajes de Interfaz
+; Nombre: Sebastian Urias Hernandez
+; Horario: 10 - 11
+; Docente: Jose Luis Medina Jimenez
+; Descripcion: Esta practica nos enseña como controlar la cantidad de espacios ocupados en un estacionamiento y como validar la entrada para no exceder la capacidad.
+
 INCLUDE Irvine32.inc
 
 .data
